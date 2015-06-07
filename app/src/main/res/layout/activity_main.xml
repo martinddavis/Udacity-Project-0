@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/Background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Title"
+        android:id="@+id/txtTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Text" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:layout_below="@+id/txtTitle"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignStart="@id/txtTitle"
+        android:layout_alignEnd="@id/txtTitle"
+        android:layout_marginTop="30dp"
+        android:baselineAligned="false">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spotify Streamer"
+            android:id="@+id/btnAppSpotifyStreamer"
+            android:layout_below="@+id/txtTitle"
+            android:layout_centerHorizontal="true"
+            android:height="55dp"
+            android:backgroundTint="@color/UdacityOrange"
+            android:textColor="@color/Text"
+            android:clickable="true"
+            android:onClick="onAppButtonClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scores App"
+            android:id="@+id/btnAppScores"
+            android:layout_below="@+id/btnAppSpotifyStreamer"
+            android:layout_centerHorizontal="true"
+            android:height="55dp"
+            android:backgroundTint="@color/UdacityOrange"
+            android:textColor="@color/Text"
+            android:clickable="true"
+            android:onClick="onAppButtonClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Library App"
+            android:id="@+id/btnAppLibrary"
+            android:layout_below="@+id/btnAppScores"
+            android:layout_alignStart="@+id/btnAppScores"
+            android:height="55dp"
+            android:backgroundTint="@color/UdacityOrange"
+            android:textColor="@color/Text"
+            android:clickable="true"
+            android:onClick="onAppButtonClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Build it Bigger"
+            android:id="@+id/btnAppBuildItBigger"
+            android:layout_below="@+id/btnAppLibrary"
+            android:layout_alignEnd="@+id/btnAppScores"
+            android:height="55dp"
+            android:backgroundTint="@color/UdacityOrange"
+            android:textColor="@color/Text"
+            android:clickable="true"
+            android:onClick="onAppButtonClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XYZ Reader"
+            android:id="@+id/btnAppXyzReader"
+            android:layout_below="@+id/btnAppBuildItBigger"
+            android:layout_alignEnd="@+id/btnAppBuildItBigger"
+            android:height="55dp"
+            android:backgroundTint="@color/UdacityOrange"
+            android:textColor="@color/Text"
+            android:clickable="true"
+            android:onClick="onAppButtonClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capstone: My Own App"
+            android:id="@+id/btnAppCapstone"
+            android:layout_below="@+id/btnAppXyzReader"
+            android:layout_centerHorizontal="true"
+            android:height="55dp"
+            android:backgroundTint="@color/CapstoneButton"
+            android:textColor="@color/CapstoneText"
+            android:clickable="true"
+            android:onClick="onAppButtonClick"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

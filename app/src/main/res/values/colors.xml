@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="UdacityOrange">#F08C35</color>
+    <color name="CapstoneButton">#CD0E3E</color>
+    <color name="Background">#DEEAF1</color>
+    <color name="Text">#000000</color>
+    <color name="CapstoneText">#ffffff</color>
+</resources>
